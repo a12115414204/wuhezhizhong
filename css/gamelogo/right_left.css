@@ -1,0 +1,388 @@
+/*上面第一个动画左右移动*/
+#gameiconright{
+	transform: translateX(2000px) translateY(50px);
+	opacity: 1;
+	animation: iconright 1s 0s ease 1;
+	-webkit-animation: iconright 1s 0s ease 1;
+}
+/*第一个动画向右移动*/
+@-webkit-keyframes iconright{
+	0%{
+		transform: translateX(0px) translateY(50px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(2000px) translateY(50px);
+		opacity: 1;
+	}
+}
+@keyframes iconright{
+	0%{
+		transform: translateX(0px) translateY(50px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(2000px) translateY(50px);
+		opacity: 1;
+	}
+}
+/*第一个动画向左移动*/
+#gameiconleft{
+	transform: translateX(-2000px) translateY(50px);
+	opacity: 1;
+	animation: iconleft 1s 0s ease 1;
+	-webkit-animation: iconleft 1s 0s ease 1;
+}
+@-webkit-keyframes iconleft{
+	0%{
+		transform: translateX(0px) translateY(50px);
+	}
+	100%{
+		transform: translateX(-2000px) translateY(50px);
+	}
+}
+@keyframes iconleft{
+	0%{
+		transform: translateX(0px) translateY(50px);
+	}
+	100%{
+		transform: translateX(-2000px) translateY(50px);
+	}
+}
+/*第一个动画从右回来*/
+#gameiconcontent{
+	transform: translateX(0px) translateY(50px);
+	animation: rightcentent 1s 0s ease 1;
+	-webkit-animation: rightcentent 1s 0s ease 1;
+}
+@-webkit-keyframes rightcentent{
+	0%{
+		transform: translateX(2000px) translateY(50px);
+	}
+	75%{
+		transform: translateX(-100px) translateY(50px);
+	}
+	100%{
+		transform: translateX(0px) translateY(50px);
+	}
+}
+@keyframes rightcentent{
+	0%{
+		transform: translateX(2000px) translateY(50px);
+	}
+	75%{
+		transform: translateX(-100px) translateY(50px);
+	}
+	100%{
+		transform: translateX(0px) translateY(50px);
+	}
+}
+/*第一个动画从左回来*/
+#gameiconcontents{
+	transform: translateX(0px) translateY(50px);
+	opacity: 1;
+	animation: leftcentent 1s 0s ease 1;
+	-webkit-animation: leftcentent 1s 0s ease 1;
+}
+@-webkit-keyframes leftcentent{
+	0%{
+		transform: translateX(-2000px) translateY(50px);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(100px) translateY(50px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px) translateY(50px);
+		opacity: 1;
+	}
+}
+@keyframes leftcentent{
+	0%{
+		transform: translateX(-2000px) translateY(50px);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(100px) translateY(50px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px) translateY(50px);
+		opacity: 1;
+	}
+}
+/*第二个动画左右移动*/
+/*第二个动画向右移动*/
+#gameiconloveright{
+	opacity: 1;
+	transform: translateX(2000px);
+	animation: loveright 1s 0s ease 1;
+	-webkit-animation: loveright 1s 0s ease 1;
+}
+@-webkit-keyframes loveright{
+	0%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(2000px) translateY(0%);
+		opacity: 1;
+	}
+}
+@keyframes loveright{
+	0%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(2000px) translateY(0%);
+		opacity: 1;
+	}
+}
+/*第二个动画从右回来*/
+#gameiconlovecentent{
+	transform: translateX(0px) translateY(0%);
+	opacity: 1;
+	animation: loverightcentent 1s 0s ease 1;
+	-webkit-animation: loverightcentent 1s 0s ease 1;
+}
+@-webkit-keyframes loverightcentent{
+	0%{
+		transform: translateX(2000px) translateY(0%);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(-100px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+}
+@keyframes loverightcentent{
+	0%{
+		transform: translateX(2000px) translateY(0%);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(-100px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+}
+/*第二个动画向左移动*/
+#gameiconloveleft{
+	opacity: 1;
+	transform: translateX(-2000px) translateY(0%);
+	animation: loveleft 1s 0s ease 1;
+	-webkit-animation: loveleft 1s 0s ease 1;
+}
+@-webkit-keyframes loveleft{
+	0%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-2000px) translateY(0%);
+		opacity: 1;
+	}
+}
+@keyframes loveleft{
+	0%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-2000px) translateY(0%);
+		opacity: 1;
+	}
+}
+/*第二个动画从左回来*/
+#gameiconlovecentents{
+	transform: translateX(0px) translateY(0%);
+	opacity: 1;
+	animation: loveleftcentent 1s 0s ease 1;
+	-webkit-animation: loveleftcentent 1s 0s ease 1;
+}
+@-webkit-keyframes loveleftcentent{
+	0%{
+		transform: translateX(-2000px) translateY(0%);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(100px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+}
+@keyframes loveleftcentent{
+	0%{
+		transform: translateX(-2000px) translateY(0%);
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(100px) translateY(0%);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px) translateY(0%);
+		opacity: 1;
+	}
+}
+/*第三个动画移动*/
+/*第三个动画向右移动*/
+#gamebtnright{
+	top: 65%;
+	opacity: 1;
+	transform: translateX(2000px);
+	animation: gamebtnright 1s 0s ease 1;
+	-webkit-animation: gamebtnright 1s 0s ease 1;
+}
+@-webkit-keyframes gamebtnright{
+	0%{
+		opacity: 1;
+		transform: translateX(0px);
+		top: 65%;
+	}
+	100%{
+		opacity: 1;
+		transform: translateX(2000px);
+		top: 65%;
+	}
+}
+@keyframes gamebtnright{
+	0%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(2000px);
+		top: 65%;
+		opacity: 1;
+	}
+}
+/*第三个动画向左移动*/
+#gamebtnleft{
+	top: 65%;
+	opacity: 1;
+	transform: translateX(-2000px);
+	animation: gamebtnleft 1s 0s ease 1;
+	-webkit-animation: gamebtnleft 1s 0s ease 1;
+}
+@-webkit-keyframes gamebtnleft{
+	0%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-2000px);
+		top: 65%;
+		opacity: 1;
+	}
+}
+@keyframes gamebtnleft{
+	0%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-2000px);
+		top: 65%;
+		opacity: 1;
+	}
+}
+/*第三个动画从右回来*/
+#gamebtnrightcentent{
+	top: 65%;
+	opacity: 1;
+	transform: translateX(0px);
+	animation: gamebtnrightcentent 1s 0s ease 1;
+	-webkit-animation: gamebtnrightcentent 1s 0s ease 1;
+}
+@-webkit-keyframes gamebtnrightcentent{
+	0%{
+		transform: translateX(2000px);
+		top: 65%;
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(-100px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+}
+@keyframes gamebtnrightcentent{
+	0%{
+		transform: translateX(2000px);
+		top: 65%;
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(-100px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+}
+/*第三个动画从左回来*/
+#gamebtnleftcentents{
+	top: 65%;
+	opacity: 1;
+	transform: translateX(0px);
+	animation: gamebtnleftcentent 1s 0s ease 1;
+	-webkit-animation: gamebtnleftcentent 1s 0s ease 1;
+}
+@-webkit-keyframes gamebtnleftcentent{
+	0%{
+		transform: translateX(-2000px);
+		top: 65%;
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(100px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+}
+@keyframes gamebtnleftcentent{
+	0%{
+		transform: translateX(-2000px);
+		top: 65%;
+		opacity: 1;
+	}
+	75%{
+		transform: translateX(100px);
+		top: 65%;
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0px);
+		top: 65%;
+		opacity: 1;
+	}
+}

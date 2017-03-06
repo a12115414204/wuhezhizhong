@@ -1,0 +1,138 @@
+/*选择栏*/
+.content{
+	/*border: 1px solid red;*/
+	width: 855px;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+.content .contentul1{
+	width: 100%;
+	height: 100%;
+}
+.content ul li{
+	float: left;
+	width: 171px;
+	height: 75px;
+	/*outline: 1px solid red;*/
+}
+#zuixin{
+	background: url(../../../img/content/neirong/Unknown-17.jpeg);
+	background-repeat: no-repeat;
+	background-position-x: 0;
+	background-position-y: 0;
+}
+#xinwen{
+	background: url(../../../img/content/neirong/Unknown-18.jpeg) ;
+	background-repeat: no-repeat;
+	background-position: -171px;
+}
+#xinwen:hover{
+	background: url(../../../img/content/neirong/Unknown-17.jpeg);
+}
+#huodong{
+	background: url(../../../img/content/neirong/Unknown-18.jpeg) ;
+	background-repeat: no-repeat;
+	background-position: -342px;
+}
+#huodong:hover{
+	background: url(../../../img/content/neirong/Unknown-17.jpeg);
+}
+#gonggao{
+	background: url(../../../img/content/neirong/Unknown-18.jpeg) ;
+	background-repeat: no-repeat;
+	background-position: -513px;
+}
+#gonggao:hover{
+	background: url(../../../img/content/neirong/Unknown-17.jpeg);
+}
+#gonglue{
+	background: url(../../../img/content/neirong/Unknown-18.jpeg) ;
+	background-repeat: no-repeat;
+	background-position: -684px;
+}
+#gonglue:hover{
+	background: url(../../../img/content/neirong/Unknown-17.jpeg);
+}
+/*新闻内容*/
+.content .contentul2{
+	width: 100%;
+	height: 100%;
+	
+}
+.content .contentul2 li{
+	width: 100%;
+	height: 180px;
+	margin-top: 30px;
+	background-color: rgb(40,40,40);
+	border: 1px solid rgb(60,60,60);
+}
+.content .contentul2 li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.content .contentul2 li a div:nth-child(1){
+	float: left;
+	width: 320px;
+	height: 100%;
+}
+.content .contentul2 li a div img{
+	width: 100%;
+}
+.content .contentul2 li a div:nth-child(2){
+	float: right;
+	width: 534px;
+	height: 100%;
+	background-color: rgb(40,40,40);
+}
+.content .contentul2 li a div h3{
+	color: rgb(234,212,152);
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.content .contentul2 li a div h4{
+	color:white;
+	font-size: 0.8em;
+	margin-left: 20px;
+}
+.content .contentul2 li a div hr{
+	width: 500px;
+	margin-left: 20px;
+}
+.content .contentul2 li a div p{
+	color:gray;
+	font-size: 0.8em;
+	line-height: 20px;
+	margin-left: 20px;
+}
+#contentover{
+	height: 40px;
+	background-color: rgb(40,40,40);
+	border: 1px solid rgb(60,60,60);
+}
+#contentover a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: rgb(228,213,154);
+	font-size: 1.2em;
+	font-weight: 700;
+	text-align: center;
+	line-height: 40px;
+}
+.content .contentul2 li:hover{
+	border: 1px solid rgb(228,213,154);
+}
+#contentover:hover{
+	border: 1px solid rgb(228,213,154);
+	background: -webkit-radial-gradient(top,rgba(91,74,44,0.8) 1%,rgb(40,40,40) 60%);
+	background: -moz-radial-gradient(top,rgba(91,74,44,0.8) 1%,rgb(40,40,40) 60%);
+	background: radial-gradient(top,rgba(91,74,44,0.8) 1%,rgb(40,40,40) 60%);
+}
+.content .contentul2 li:hover div:nth-child(2){
+	background: -webkit-radial-gradient(left top,rgba(91,74,44,0.7) 1%,rgb(40,40,40) 50%);
+	background: -moz-radial-gradient(left top,rgba(91,74,44,0.7) 1%,rgb(40,40,40) 50%);
+	background: radial-gradient(left top,rgba(91,74,44,0.7) 1%,rgb(40,40,40) 50%);
+}

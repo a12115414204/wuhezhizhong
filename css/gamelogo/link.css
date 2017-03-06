@@ -1,0 +1,48 @@
+@media only screen and (min-width: 400px) and (max-width: 990px) {
+	.gblck3{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		float: none;
+	}
+	.gblck4{
+		width: 100%;
+		margin-left: 10%;
+		margin-right: 10%;
+		float: none;
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 760px) {
+	.gbrckaddress{
+		width: 100%;
+		margin-left: 0%;
+		margin-top: 20px;
+		float: none;
+	}
+	.gbrckphone{
+		width: 100%;
+		float: none;
+		margin-left: 0%;
+		margin-top: 20px;
+	}
+	.gbrckemaill{
+		width: 100%;
+		float: none;
+		margin-left: 0%;
+		margin-top: 20px;
+	}
+}
+@media only screen and (min-width: 400px) and (max-width: 1200px) {
+	.imgs1{
+		left: 305px;
+		margin: 0;
+	}
+	.imgs2{
+		left: 0px;
+		margin-top: -80px;
+		margin-left: 0px;
+	}
+	.imgs3{
+		margin-left: 300px;
+	}
+}

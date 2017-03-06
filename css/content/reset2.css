@@ -1,0 +1,23 @@
+ /*外部初始化*/
+ html,body,div,p,ul,li,section,footer,nav,span,a{
+ 	margin: 0;
+ }
+ /*内部初始化*/
+ html,body,div,p,ul,li,section,footer,nav,span,a{
+ 	padding: 0;
+ }
+  /*定位继承*/
+.sections-footer,.xuanchu,header,.content{
+	position: relative;
+}
+/*浮动清除*/
+.meitizi,.xinshoujieshao,.xuanimg{
+	overflow: hidden;
+}
+/*a标签下滑线清除*/
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style-type: none;
+}

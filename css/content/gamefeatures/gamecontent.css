@@ -1,0 +1,137 @@
+.gamecontent{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1000px;
+	background: url(../../../img/gamefeatures/Unknown-9.jpeg);
+	background-position: center top;
+	background:cover;
+}
+#gameover{
+	opacity: 0;
+	transition: all 0.5s 0s ease;
+	-webkit-transition: all 0.5s 0s ease;
+}
+#gameover_on{
+	opacity: 1;
+	-webkit-animation: rile 1s 0s ease 1;
+	animation: rile 1s 0s ease 1;
+}
+@-webkit-keyframes rile{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes rile{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+/*详细内容*/
+.center{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+.age{
+	display: none;
+	width: 40px;
+	height: 49px;
+	position: absolute;
+	top: 15px;
+	left: 0;
+	background: url(../../../img/gamefeatures/Unknown-1.png);
+	opacity: 1;
+	transition: all 0.5s 0s ease;
+	-webkit-transition: all 0.5s 0s ease;
+}
+.country{
+	display: none;
+	width: 150px;
+	height: 20px;
+	position: absolute;
+	top: 15px;
+	right: -20px;
+	color: white;
+	background: url(../../../img/gamefeatures/Unknown-10.png);
+	background-repeat: no-repeat;
+	opacity: 1;
+	transition: all 0.5s 0s ease;
+	-webkit-transition: all 0.5s 0s ease;
+}
+.flag{
+	width: 100%;
+	height: 100%;
+	line-height: 20px;
+	text-indent: 35px;
+	font-size: 14px;
+}
+ul{
+	width: 100%;
+	height: 0px;
+	color: white;
+	overflow: hidden;
+	transition: all 0.3s 0s ease;
+	-webkit-transition: all 0.3s 0s ease;
+}
+ul li{
+	width: 100%;
+	height: 20px;
+	text-align: left;
+	font-size: 14px;
+	margin-top: 10px;
+}
+ul li span{
+	margin-left: 35px;
+}
+.flag1{
+	background: url(../../../img/gamefeatures/Unknown-11.png);
+	background-repeat: no-repeat;
+}
+.flag2{
+	width: 200%;
+	background: url(../../../img/gamefeatures/Unknown-12.png);
+	background-repeat: no-repeat;
+}
+.flag3{
+	background: url(../../../img/gamefeatures/Unknown-13.png);
+	background-repeat: no-repeat;
+}
+.flag4{
+	background: url(../../../img/gamefeatures/Unknown-14.png);
+	background-repeat: no-repeat;
+}
+.country:hover ul{
+	height: 130px;
+	transition: all 0.3s 0s ease;
+	-webkit-transition: all 0.3s 0s ease;
+}
+.erweima{
+	display: none;
+	width: 215px;
+	height: 194px;
+	position: fixed;
+	top: 230px;
+	right: 50px;
+	background: url(../../../img/gamefeatures/Unknown.png);
+	opacity: 1;
+	z-index: 10;
+	transition: all 0.5s 0s ease;
+	-webkit-transition: all 0.5s 0s ease;
+}
+#erweimanone{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}

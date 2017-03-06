@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>游久紫钥</title>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/reset4.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/gamefeatures.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/gamecontent.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/gamenav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/ganshoujizhi.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/gsjzcenter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/tszycenter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/jzrycenter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/xhwdcenter.css"/>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/yyjhmcenter.css"/>
+		<script src="thirdparty/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/gamefeatures/gamefeatures.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="gamefeatures">
+			<div class="loading"></div>
+			<p id="baifenbi"></p>
+		</div>
+		<div class="gamevideo">
+			<video id="cg" width="1920" height="910" preload="auto">
+				<source src="http://s1.pkey.cn/badguy/cg.mp4" type="video/mp4"></source>
+				<source src="http://s1.pkey.cn/badguy/cg.ogv" type="video/ogg"></source>
+				<source src="http://s1.pkey.cn/badguy/cg.webm" type="video/webm"></source>
+				<object width="" height="" type="application/x-shockwave-flash" data="myvideo.swf">
+					<param name="movie" value="myvideo.swf" />
+					<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+				</object>
+				当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+			</video>
+		</div>
+		<a id="gameskip" href="javascript:void(0)">SKIP 跳过</a>
+		<!--二维码定位-->
+		<div class="erweima">
+			<a id="erweimanone" href="javascript:void(0)"></a>
+		</div>
+		<div class="gamecontent">
+			<div class="center">
+				<!--左上角年龄-->
+				<div class="age"></div>
+				<!--右上角国家-->
+				<div class="country">
+					<div class="flag">中文</div>
+					<ul>
+						<li class="flag1"><span>United Kingdom</span></li>
+						<li class="flag2"><span>Русский язык</span></li>
+						<li class="flag3"><span>한국</span></li>
+						<li class="flag4"><span>日本</span></li>
+					</ul>
+				</div>
+				<div class="nav">
+					<a class="nav1" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-30.png"/>
+						<h2>感受极致</h2>
+						<p>一部能玩的好莱坞大片</p>
+					</a>
+					<a class="nav2" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-31.png"/>
+						<h2>天生卓越</h2>
+						<p>3D次世代云端引擎首作</p>
+					</a>
+					<a class="nav3" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-32.png"/>
+						<h2>见证荣耀</h2>
+						<p>苹果WWDC现场展示产品</p>
+					</a>
+					<a class="nav4" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-33.png"/>
+						<h2>邂逅伟大</h2>
+						<p>世界顶级游戏研发商打造</p>
+					</a>
+					<a id="btn_order" href="javascript:void(0)">
+						预约激活码
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="ganshoujizhi">
+			<div class="gamenav">
+				<a class="nav1s" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-30.png"/>
+						<h2>感受极致</h2>
+					</a>
+					<a class="nav2s" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-31.png"/>
+						<h2 id="cao">天生卓越</h2>
+						
+					</a>
+					<a class="nav3s" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-32.png"/>
+						<h2>见证荣耀</h2>
+						
+					</a>
+					<a class="nav4s" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-33.png"/>
+						<h2>邂逅伟大</h2>
+						
+					</a>
+					<a id="btn_logo" href="javascript:void(0)">
+						<img src="img/gamefeatures/Unknown-29.png"/>
+					</a>
+			</div>
+		</div>
+		<div class="gsjzcenter">
+			<div id="left">
+				<img src="img/gamefeatures/Unknown-35.png"/>
+			</div>
+			<div id="right">
+				<img src="img/gamefeatures/Unknown-34.png"/>
+			</div>
+			<div class="gsjz">
+				<div class="gsjz2">
+					<ul class="gsjzul">
+						<li id="gsjzli1">
+							<img src="img/gamefeatures/Unknown-15.jpeg"/>
+						</li>
+						<li id="gsjzli2">
+							<img src="img/gamefeatures/Unknown-16.jpeg"/>
+						</li>
+						<li id="gsjzli3">
+							<img src="img/gamefeatures/Unknown-17.jpeg"/>
+						</li>
+						<li id="gsjzli4">
+							<img src="img/gamefeatures/Unknown-18.jpeg"/>
+						</li>
+						<li id="gsjzli5">
+							<img src="img/gamefeatures/Unknown-19.jpeg"/>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="tszycenter">
+			<div class="tszy">
+				<a id="game_game1" href="javascript:void(0)">
+					<img id="game1_img1" src="img/gamefeatures/Unknown-3.jpeg"/>
+					<img id="game1_img2" src="img/gamefeatures/Unknown.gif"/>
+					<span id="game1_kuang"></span>
+				</a>
+				<a id="game_game2" href="javascript:void(0)">
+					<img id="game2_img1" src="img/gamefeatures/Unknown-4.jpeg"/>
+					<img id="game2_img2" src="img/gamefeatures/Unknown-1.gif"/>
+					<span id="game2_kuang"></span>
+				</a>
+				<a id="game_game3" href="javascript:void(0)">
+					<img id="game3_img1" src="img/gamefeatures/Unknown-5.jpeg"/>
+					<img id="game3_img2" src="img/gamefeatures/Unknown-2.gif"/>
+					<span id="game3_kuang"></span>
+				</a>
+				<a id="game_game4" href="javascript:void(0)">
+					<img id="game4_img1" src="img/gamefeatures/Unknown-6.jpeg"/>
+					<img id="game4_img2" src="img/gamefeatures/Unknown-3.gif"/>
+					<span id="game4_kuang"></span>
+				</a>
+			</div>
+			<div id="tszyleft">
+				<img src="img/gamefeatures/Unknown-35.png"/>
+			</div>
+			<div id="tszyright">
+				<img src="img/gamefeatures/Unknown-34.png"/>
+			</div>
+		</div>
+		<div class="videoBox1">
+			<div class="videoBox1s">
+				<video width="800" height="450" controls="controls" preload="auto">
+					<source src="css/content/gamefeatures/video/Crysis3.webmhd.mp4" type="video/mp4"></source>
+					<source src="css/content/gamefeatures/video/Crysis3.webmhd.webm" type="video/webm"></source>
+					<object width="800" height="450" type="application/x-shockwave-flash" data="http://s1.pkey.cn/badguy/flashmediaelement.swf">
+						<param name="movie" value="http://s1.pkey.cn/badguy/flashmediaelement.swf" />
+						<param name="flashvars" value="controls=true&file=http://s2.pkey.cn/badguy/20160119/01/Crysis3.mp4" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+				<a id="videoBox1_off" href="javascript:void(0)"></a>
+			</div>
+		</div>
+		<div class="videoBox2">
+			<div class="videoBox2s">
+				<video width="800" height="450" controls="controls" preload="auto">
+					<source src="css/content/gamefeatures/video/StarCitizen.webmhd.mp4" type="video/mp4"></source>
+					<source src="css/content/gamefeatures/video/StarCitizen.webmhd.webm" type="video/webm"></source>
+					<object width="800" height="450" type="application/x-shockwave-flash" data="http://s1.pkey.cn/badguy/flashmediaelement.swf">
+						<param name="movie" value="http://s1.pkey.cn/badguy/flashmediaelement.swf" />
+						<param name="flashvars" value="controls=true&file=http://s2.pkey.cn/badguy/20160119/01/Crysis3.mp4" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+				<a id="videoBox2_off" href="javascript:void(0)"></a>
+			</div>
+		</div>
+		<div class="videoBox3">
+			<div class="videoBox3s">
+				<video width="800" height="450" controls="controls" preload="auto">
+					<source src="css/content/gamefeatures/video/Ryse.webmhd.mp4" type="video/mp4"></source>
+					<source src="css/content/gamefeatures/video/Ryse.webmhd.webm" type="video/webm"></source>
+					<object width="800" height="450" type="application/x-shockwave-flash" data="http://s1.pkey.cn/badguy/flashmediaelement.swf">
+						<param name="movie" value="http://s1.pkey.cn/badguy/flashmediaelement.swf" />
+						<param name="flashvars" value="controls=true&file=http://s2.pkey.cn/badguy/20160119/01/Crysis3.mp4" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+				<a id="videoBox3_off" href="javascript:void(0)"></a>
+			</div>
+		</div>
+		<div class="videoBox4">
+			<div class="videoBox4s">
+				<video width="800" height="450" controls="controls" preload="auto">
+					<source src="css/content/gamefeatures/video/HomefrontTheRevolution.webmhd.mp4" type="video/mp4"></source>
+					<source src="css/content/gamefeatures/video/HomefrontTheRevolution.webmhd.webm" type="video/webm"></source>
+					<object width="800" height="450" type="application/x-shockwave-flash" data="http://s1.pkey.cn/badguy/flashmediaelement.swf">
+						<param name="movie" value="http://s1.pkey.cn/badguy/flashmediaelement.swf" />
+						<param name="flashvars" value="controls=true&file=http://s2.pkey.cn/badguy/20160119/01/Crysis3.mp4" />
+					</object>
+					当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+				</video>
+				<a id="videoBox4_off" href="javascript:void(0)"></a>
+			</div>
+		</div>
+		<div class="jzrycenter">
+			<div class="jzry">
+				<a id="jzry_a1" href="javascript:void(0)"></a>
+				<a id="jzry_a2" href="javascript:void(0)"></a>
+				<a id="jzry_a3" href="javascript:void(0)"></a>
+				<a id="jzry_a4" href="javascript:void(0)"></a>
+				<a id="jzry_a5" href="javascript:void(0)"></a>
+				<a id="jzry_a6" href="javascript:void(0)"></a>
+				<a id="jzry_a7" href="javascript:void(0)"></a>
+				<a id="jzry_a8" href="javascript:void(0)"></a>
+				<a id="jzry_a9" href="javascript:void(0)"></a>
+			</div>
+			<div id="jzryleft">
+				<img src="img/gamefeatures/Unknown-35.png"/>
+			</div>
+			<div id="jzryright">
+				<img src="img/gamefeatures/Unknown-34.png"/>
+			</div>
+			<!--小屏幕切换区域-->
+			<div class="jzryswiter">
+				<ul class="jzryswiterul">
+					<li id="jzryswiterli1" class="lis_on">
+						<img src="img/gamefeatures/Unknown-19.png"/>
+					</li>
+					<li id="jzryswiterli2" class="lis_on">
+						<img src="img/gamefeatures/Unknown-20.png"/>
+					</li>
+					<li id="jzryswiterli3" class="lis_on">
+						<img src="img/gamefeatures/Unknown-21.png"/>
+					</li>
+					<li id="jzryswiterli4" class="lis_on">
+						<img src="img/gamefeatures/Unknown-22.png"/>
+					</li>
+					<li id="jzryswiterli5" class="lis_on">
+						<img src="img/gamefeatures/Unknown-23.png"/>
+					</li>
+					<li id="jzryswiterli6" class="lis_on">
+						<img src="img/gamefeatures/Unknown-24.png"/>
+					</li>
+					<li id="jzryswiterli7" class="lis_on">
+						<img src="img/gamefeatures/Unknown-25.png"/>
+					</li>
+					<li id="jzryswiterli8" class="lis_on">
+						<img src="img/gamefeatures/Unknown-26.png"/>
+					</li>
+					<li id="jzryswiterli9" class="lis_on">
+						<img src="img/gamefeatures/Unknown-27.png"/>
+					</li>
+				</ul>
+				<a id="jzryswiterleft" href="javascriot:void(0)"></a>
+				<a id="jzryswiterright" href="javascriot:void(0)"></a>
+				<a id="jzryswiteroff" href="javascriot:void(0)"></a>
+				<div class="jzryswiter_bottom">
+					<a id="jzryswiter_bottom1" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom2" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom3" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom4" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom5" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom6" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom7" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom8" href="javascript:void(0)"></a>
+					<a id="jzryswiter_bottom9" href="javascript:void(0)"></a>
+				</div>
+			</div>
+		</div>
+		<div class="xhwdcenter">
+			<div class="xhwd">
+				<ul class="xhwdul">
+					<li class="xhwdli1">
+						<div class="res_1" id="res_1_on"></div>
+						<div class="res_2" id="res_2_on"></div>
+					</li>
+					<li class="xhwdli2">
+						<div class="res2"></div>
+					</li>
+					<li class="xhwdli3">
+						<div class="res3"></div>
+					</li>
+					<li class="xhwdli4">
+						<div class="res4">
+							<div class="res4_1"></div>
+							<div class="res4_2"></div>
+							<div class="res4_3"></div>
+							<div class="res4_4"></div>
+						</div>
+					</li>
+					<li class="xhwdli5">
+						<div class="res5_1"></div>
+						<div class="res5_2"></div>
+					</li>
+					<li class="xhwdli6">
+						<div class="res6">
+							<a id="res6_btn" href="javascript:void(0)">预约激活码</a>
+						</div>
+					</li>
+				</ul>
+				<div class="xhwdbtn">
+					<a class="xhwdbtn_a1" id="xhwdbtn_on" href="javascript:void(0)">01
+						<i id="xhwd_i1">3D次世代云端引擎开发完毕</i>
+					</a>
+					<span class="xhwdbtn_right1"></span>
+					<a class="xhwdbtn_a2" href="javascript:void(0)">02
+						<i id="xhwd_i2">2014《乌合之众》项目立项</i>
+					</a>
+					<span class="xhwdbtn_right2"></span>
+					<a class="xhwdbtn_a3" href="javascript:void(0)">03
+						<i id="xhwd_i3">首批角色设定出炉</i>
+					</a>
+					<span class="xhwdbtn_right3"></span>
+					<a class="xhwdbtn_a4" href="javascript:void(0)">04
+						<i id="xhwd_i4">游戏框架及核心战斗完成</i>
+					</a>
+					<span class="xhwdbtn_right4"></span>
+					<a class="xhwdbtn_a5" href="javascript:void(0)">05
+						<i id="xhwd_i5">受邀参加苹果（WWDC）发布会</i>
+					</a>
+					<span class="xhwdbtn_right5"></span>
+					<a class="xhwdbtn_a6" href="javascript:void(0)">06</a>
+					<span class="xhwdbtn_right6"></span>
+					<span class="xhwdbtn_right7"></span>
+				</div>
+				<div id="xhwdleft">
+					<img src="img/gamefeatures/Unknown-35.png"/>
+				</div>
+				<div id="xhwdright">
+					<img src="img/gamefeatures/Unknown-34.png"/>
+				</div>
+			</div>
+		</div>
+		<a id="returnhomepage" href="javascript:void(0)">
+			返回<br />
+			首页
+		</a>
+		<div class="yyjhmcenter">
+			<div class="yyjhm">
+				<div class="yyjhm_title">
+					预定激活码
+				</div>
+				<div class="yyjhm_title2">
+					Game reservation
+				</div>
+				<div class="yyjhm_box1">
+					<h6>预定信息填写</h6>
+					<div class="yyjhm_from">
+						手机号码
+						<input type="text" name="" id="yyjhm_phone" value="" />
+					</div>
+					<div class="yyjhm_from2">
+						设备类型:
+						<a id="yyjhm_a1" href="javascript:void(0)">
+							<span></span>
+							安卓ANDROID
+						</a>
+						<a id="yyjhm_a2" href="javascript:void(0)">
+							<span></span>
+							苹果IOS
+						</a>
+					</div>
+					<a id="yyjhmbtn_submit" href="javascript:void(0)">抢先预订</a>
+				</div>
+				<div class="yyjhm_box2">
+					<h6>关注抢先领取</h6>
+					<div class="yyjhm_weixin">
+						官方微信:
+						<br />
+						<b>乌合之众手游</b>
+					</div>
+					<div class="yyjhm_bar">
+						官方贴吧:
+						<br />
+						<a href="http://tieba.baidu.com/f?kw=%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97">
+							<b>乌合之众</b>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="sections-footer">
+				<div class="section-footerright">
+					<p><img src="img/Homepage/content/Unknown-3.png"/><span>沪公网安备 31010402000711号 | </span><img src="img/Homepage/content/Unknown-4.png"/><span> 沪网文[2015]0802-202号 | 沪ICP备15039624号-1</span></p>
+					<p>抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活</p>
+					<p>上海紫钥信息技术有限公司 版权所有</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

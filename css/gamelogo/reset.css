@@ -1,0 +1,29 @@
+ /*外部初始化*/
+ html,body,div,p,ul,li,section,footer,nav,span{
+ 	margin: 0;
+ }
+ /*内部初始化*/
+ html,body,div,p,ul,li,section,footer,nav,span{
+ 	padding: 0;
+ }
+ /*定位继承*/
+header,.content,.textareas,.eamills,.names,.gamebtndown-contents,.Leave-a-message,.gamebtnright,.gbrckemaill,.gbrckaddress,.gbrckphone,.game,.gamefooter{
+	position: relative;
+}
+.textareas,.eamills,.names,body,.gamebtnrightcontent,.gamebtnleftcontent{
+	overflow: hidden;
+}
+/*a标签下滑线清除*/
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style-type: none;
+}
+/*样式清除*/
+textarea,input{
+	resize: none;
+	border: none;
+	background: none;
+	outline: none;
+}

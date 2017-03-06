@@ -1,0 +1,301 @@
+.tszycenter{
+	width: 100%;
+	height: 910px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../../../img/gamefeatures/Unknown-2.jpeg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: none;
+}
+#tszycenter_on{
+	opacity: 1;
+	animation: ts_on 1s 0s ease 1;
+	-webkit-animation: ts_on 1s 0s ease 1;
+}
+#tszycenter_off{
+	opacity: 0;
+	animation: ts_off 1s 0s ease 1;
+	-webkit-animation: ts_off 1s 0s ease 1;
+}
+
+@keyframes ts_on{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes ts_on{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes ts_off{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes ts_off{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.tszy{
+	width: 1000px;
+	height: 100%;
+	margin: auto;
+	position: relative;
+}
+#game_game1{
+	position: absolute;
+	top: 198px;
+	left: -110px;
+	width: 300px;
+	height: 201px;
+}
+#game1_img1{
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game2_img1{
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game3_img1{
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game4_img1{
+	display: block;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game1_img2{
+	display: none;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game1_kuang{
+	position: absolute;
+	width: 300px;
+	height: 201px;
+	top: 0px;
+	left: 0px;
+	background: url(../../../img/gamefeatures/k1.png);
+}
+#game_game2{
+	position: absolute;
+	top: 245px;
+	right: 10px;
+	width: 264px;
+	height: 177px;
+}
+#game2_img2{
+	display: none;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game2_kuang{
+	position: absolute;
+	width: 264px;
+	height: 177px;
+	top: 0px;
+	left: 0px;
+	background: url(../../../img/gamefeatures/k2.png);
+}
+#game_game3{
+	position: absolute;
+	top: 565px;
+	left: 10px;
+	width: 264px;
+	height: 177px;
+}
+#game3_img2{
+	display: none;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game3_kuang{
+	position: absolute;
+	width: 264px;
+	height: 177px;
+	top: 0px;
+	left: 0px;
+	background: url(../../../img/gamefeatures/k3.png);
+}
+#game_game4{
+	position: absolute;
+	top: 495px;
+	right: -110px;
+	width: 300px;
+	height: 201px;
+}
+#game4_img2{
+	display: none;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#game4_kuang{
+	position: absolute;
+	width: 300px;
+	height: 201px;
+	top: 0px;
+	left: 0px;
+	background: url(../../../img/gamefeatures/k4.png);
+}
+.videoBox1{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 10;
+}
+.videoBox1s{
+	width: 800px;
+	height: 450px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -240px;
+}
+#videoBox1_off{
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	top: 0px;
+	right: -75px;
+	background: url(../../../img/gamefeatures/off.png);
+}
+.videoBox2{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 10;
+}
+.videoBox2s{
+	width: 800px;
+	height: 450px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -240px;
+}
+#videoBox2_off{
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	top: 0px;
+	right: -75px;
+	background: url(../../../img/gamefeatures/off.png);
+}
+.videoBox3{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 10;
+}
+.videoBox3s{
+	width: 800px;
+	height: 450px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -240px;
+}
+#videoBox3_off{
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	top: 0px;
+	right: -75px;
+	background: url(../../../img/gamefeatures/off.png);
+}
+.videoBox4{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 10;
+}
+.videoBox4s{
+	width: 800px;
+	height: 450px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -240px;
+}
+#videoBox4_off{
+	position: absolute;
+	width: 71px;
+	height: 71px;
+	top: 0px;
+	right: -75px;
+	background: url(../../../img/gamefeatures/off.png);
+}
+#tszyleft{
+	display: block;
+	width: 86px;
+	height: 162px;
+	position: absolute;
+	top: 425px;
+	left: 50px;
+	z-index: 10;
+}
+#tszyleft img{
+	width: 100%;
+}
+#tszyright{
+	display: block;
+	width: 86px;
+	height: 162px;
+	position: absolute;
+	top: 425px;
+	right: 50px;
+	z-index: 10;
+}
+#tszyright img{
+	width: 100%;
+}

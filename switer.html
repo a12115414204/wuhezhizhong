@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>双层switer</title>
+		<link rel="stylesheet" type="text/css" href="thirdparty/swiper-3.3.1.min.css"/>
+		<script src="thirdparty/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="thirdparty/swiper-3.3.1.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.swiper-container{
+			position: absolute;
+			top: 100px;
+			left: 0;
+			right: 0;
+			margin: auto;
+		    width: 600px;
+		    height: 300px;
+		    box-shadow: 0 0 10px gray;
+		}
+		#a1{
+			width: 600px;
+			height: 300px;
+			background-color: darkseagreen;
+		}
+		#a2{
+			background-color: yellowgreen;
+		}
+		#a3{
+			background-color: hotpink;
+		}
+		.swiper-container2{
+			border: 1px solid black;
+		}
+		#a4{
+			width: 600px;
+			height: 300px;
+			background-color: blueviolet;
+		}
+		#a5{
+			width: 600px;
+			height: 300px;
+			background-color: darkgoldenrod;
+		}
+		#a6{
+			width: 600px;
+			height: 300px;
+			background-color: burlywood;
+		}
+		#btn1{
+			margin-top: -130px;
+			color: yellow;
+		}
+		#btn2{
+			margin-top: -130px;
+			color: yellow;
+		}
+		.div1{
+			width: 30px;
+			height: 30px;
+			border: 1px solid red;
+			position: absolute;
+			top: 400px;
+			left: 10px;
+		}
+		.div2{
+			width: 30px;
+			height: 30px;
+			border: 1px solid red;
+			position: absolute;
+			top: 400px;
+			left: 50px;
+		}
+		.div3{
+			width: 30px;
+			height: 30px;
+			border: 1px solid red;
+			position: absolute;
+			top: 400px;
+			left: 90px;
+		}
+	</style>
+	<body>
+		<div class="swiper-container">
+		  	<div class="swiper-wrapper">
+		    		<div id="a1" class="swiper-slide">slider1</div>
+		    		<div id="a2" class="swiper-slide">
+		    			<div class="swiper-container2">
+						<div class="swiper-wrapper">
+						    	<div id="a4" class="swiper-slide">slider4</div>
+						    	<div id="a5" class="swiper-slide">slider5</div>
+						    	<div id="a6" class="swiper-slide">slider6</div>
+						    	<div id="a4" class="swiper-slide">slider7</div>
+						    	<div id="a5" class="swiper-slide">slider8</div>
+						</div>
+						<div id="btn1" class="swiper-button-prev swiper-button-white"></div>
+               			<div id="btn2" class="swiper-button-next swiper-button-white"></div>
+					</div>
+		    		</div>
+		   		<div id="a3" class="swiper-slide">slider3</div>
+		   		
+		  	</div>
+		  	<!-- 如果需要导航按钮 -->
+                <div id="btn3" class="swiper-button-prev"></div>
+                <div id="btn4" class="swiper-button-next"></div>
+            <!--如果需要分页器-->
+             	<div id="swt" class="swiper-pagination"></div>
+		</div>
+		 <div class="div1"></div>
+		  <div class="div2"></div>
+		   <div class="div3"></div>
+	</body>
+	<script type="text/javascript">
+		window.onload = function(){
+			var mySwiter = new Swiper(".swiper-container",{
+				direction: 'horizontal',
+			    loop: true,
+			    // 如果需要前进后退按钮
+	            nextButton: '#btn3',
+	            prevButton: '#btn4',
+	            watchSlidesProgress : true,
+	            pagination : '.swiper-pagination',
+	            paginationClickable :true,
+			});
+			var mySwiters = new Swiper(".swiper-container2",{
+				direction: 'horizontal',
+			    nested:true,
+			    centeredSlides : false,
+			    slidesPerView : 1,
+			    slidesPerGroup : 1,
+//			    spaceBetween : -20,
+			    // 如果需要前进后退按钮
+	            nextButton: '#btn1',
+	            prevButton: '#btn2',
+				watchSlidesProgress : true,
+				 paginationClickable :false,
+			});
+			var n;
+			var m;
+			$("#btn1").click(function(){
+				console.log("小左");
+				m = Math.round(mySwiters.slides[2].progress);
+				if (m == 2) {
+					$("#btn1").css("display","none");
+					$("#btn2").css("display","block");
+					$("#btn3").css("display","block");
+					$("#btn4").css("display","none");
+				}
+				if (m == -1) {
+					$("#btn2").css("display","block");
+					$("#btn4").css("display","none");
+				}
+			});
+			$("#btn2").click(function(){
+				m = Math.round(mySwiters.slides[2].progress);
+				if (m == -2) {
+					$("#btn1").css("display","block");
+					$("#btn2").css("display","none");
+					$("#btn3").css("display","none");
+					$("#btn4").css("display","block");
+				}
+				if (m == 1) {
+					$("#btn1").css("display","block");
+					$("#btn3").css("display","none");
+				}
+			});
+			$("#btn3").click(function(){
+				n = Math.round(mySwiter.slides[1].progress);
+				if(n == 1){
+					$("#btn3").css("display","none");
+					$("#btn4").css("display","block");
+					$("#btn1").css("display","block");
+					$("#btn2").css("display","block");
+				}
+				console.log(n);
+				if (n == 2) {
+					$("#btn4").css("display","block");
+				}
+				if (n == 1 && m == 2) {
+					mySwiters.slidePrev();
+					mySwiters.slidePrev();
+					mySwiters.slidePrev();
+					mySwiters.slidePrev();
+				}
+			});
+			$("#btn4").click(function(){
+				n = Math.round(mySwiter.slides[1].progress);
+				if(n == 1){
+					$("#btn3").css("display","block");
+					$("#btn4").css("display","none");
+					$("#btn1").css("display","block");
+					$("#btn2").css("display","block");
+				}
+				console.log(n);
+				if (n == 0) {
+					$("#btn3").css("display","block");
+				}
+				if (n == 1) {
+					mySwiters.slideNext();
+					mySwiters.slideNext();
+					mySwiters.slideNext();
+					mySwiters.slideNext();
+				}
+			});
+			$(".div3").click(function(){
+				console.log('aaa');
+//				$("#a1").trigger("click");
+				$("#swt span").eq(0).trigger("click");
+			});
+		}
+	</script>
+</html>

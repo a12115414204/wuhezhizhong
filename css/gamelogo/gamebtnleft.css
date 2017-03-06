@@ -1,0 +1,131 @@
+.gamebtnleft{
+	position: absolute;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.9);
+}
+#gamebtncentent{
+	top: 0px;
+	animation: btnleftcentent 1s 0s ease 1;
+	-webkit-animation: btnleftcentent 1s 0s ease 1;
+}
+@-webkit-keyframes btnleftcentent{
+	0%{
+		top: 0px;
+		left: 0%;
+	}
+	100%{
+		top: 0px;
+		left: -100%;
+	}
+}
+@keyframes btnleftcentent{
+	0%{
+		top: 0px;
+		left: 0%;
+	}
+	100%{
+		top: 0px;
+		left: -100%;
+	}
+}
+
+#gamebtnleftsr{
+	left: 0px;
+	animation: btnlefts 1s 0s ease 1;
+	-webkit-animation: btnlefts 1s 0s ease 1;
+}
+@-webkit-keyframes btnlefts{
+	0%{
+		top: 0px;
+		left: -100%;
+	}
+	75%{
+		top: 0px;
+		left: 10%;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+	}
+}
+@keyframes btnlefts{
+	0%{
+		top: 0px;
+		left: -100%;
+	}
+	75%{
+		top: 0px;
+		left: 10%;
+	}
+	100%{
+		top: 0px;
+		left: 0px;
+	}
+}
+/*详细内容*/
+.gamebtnleftcontent{
+	position: absolute;
+	top: 20%;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.gamebtnleftcontent h3{
+	text-align: center;
+	color: gray;
+	font-size: 0.8em;
+}
+.gamebtnleftcontent h2{
+	text-align: center;
+	font-size: 3em;
+}
+.gamebtnleftcontent h2 span{
+	color: red;
+}
+.gblck1{
+	width: 10%;
+	border-top: 0.1px solid black;
+	margin: auto;
+}
+.gblck2{
+	width: 0px;
+	height: 30px;
+	border-left: 0.5px solid black;
+	margin: auto;
+}
+.gblck{
+	width: 100%;
+	height: auto;
+}
+.gblck3{
+	margin-left: 15%;
+	float: left;
+	width: 35%;
+	height: auto;
+	font-size: 0.8em;
+	font-weight: 600;
+}
+.gblck3 p{
+	margin-top: 5px;
+	line-height: 25px;
+}
+.gblck4{
+	margin-left: 20px;
+	float: left;
+	width: 35%;
+	height: auto;
+	font-size: 0.8em;
+	font-weight: 600;
+}
+.gblck4 p{
+	margin-top: 5px;
+	line-height: 15px;
+}
+.gamebtnleftcontent p:nth-of-type(1){
+	height: 30px;
+	line-height: 30px;
+	border-left: 1px solid red;
+}

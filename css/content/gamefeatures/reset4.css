@@ -1,0 +1,23 @@
+ /*外部初始化*/
+ html,body,div,h1,h2,h3,h4,h5,h6,p,ul,li,section,footer,nav,span,a{
+ 	margin: 0;
+ }
+ /*内部初始化*/
+ html,body,div,h1,h2,h3,h4,h5,h6,p,ul,li,section,footer,nav,span,a{
+ 	padding: 0;
+ }
+  /*定位继承*/
+.gamenav,.gamefeatures{
+	position: relative;
+}
+/*浮动清除*/
+{
+	overflow: hidden;
+}
+/*a标签下滑线清除*/
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style-type: none;
+}

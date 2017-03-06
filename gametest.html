@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/content/gamefeatures/reset4.css"/>
+		<script src="thirdparty/jquery-2.2.3.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		.test1{
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 1px solid red;
+		}
+		.test1 ul{
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 1920px;
+			height: 800px;
+			border: 1px solid red;
+		}
+		.li1{
+			z-index: 1;
+			position: absolute;
+			top: 300px;
+			left: 600px;
+			width: 300px;
+			height: 300px;
+			opacity: 0.3;
+			background-color: hotpink;
+			transition: all 0.5s 0s ease;
+			-webkit-transition: all 0.5s 0s ease;
+		}
+		.li2{
+			z-index: 2;
+			position: absolute;
+			top: 300px;
+			left: 650px;
+			width: 300px;
+			height: 300px;
+			opacity: 0.5;
+			background-color:  indianred;
+			transition: all 0.5s 0s ease;
+			-webkit-transition: all 0.5s 0s ease;
+		}
+		.li3{
+			z-index: 3;
+			position: absolute;
+			top: 300px;
+			left: 700px;
+			width: 300px;
+			height: 300px;
+			opacity: 1;
+			background-color:  gold;
+			transition: all 0.5s 0s ease;
+			-webkit-transition: all 0.5s 0s ease;
+		}
+		.li4{
+			z-index: 2;
+			position: absolute;
+			top: 300px;
+			left: 750px;
+			width: 300px;
+			height: 300px;
+			opacity: 0.5;
+			background-color:  beige;
+			transition: all 0.5s 0s ease;
+			-webkit-transition: all 0.5s 0s ease;
+		}
+		.li5{
+			z-index: 1;
+			position: absolute;
+			top: 300px;
+			left: 800px;
+			width: 300px;
+			height: 300px;
+			opacity: 0.3;
+			background-color:  brown;
+			transition: all 0.5s 0s ease;
+			-webkit-transition: all 0.5s 0s ease;
+		}
+		.test2{
+			display: none;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.test3{
+			display: none;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.test4{
+			display: none;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#left{
+			display: block;
+			position: absolute;
+			width: 50px;
+			height: 100px;
+			top: 50%;
+			left: 0;
+			z-index: 100;
+			background-color: yellowgreen;
+		}
+		#right{
+			display: block;
+			position: absolute;
+			width: 50px;
+			height: 100px;
+			top: 50%;
+			right: 0;
+			z-index: 100;
+			background-color: darkgoldenrod;
+		}
+		.nav{
+			width: 1000px;
+			height: 100px;
+			position: absolute;
+			top: 10px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			overflow: hidden;
+			z-index: 100;
+		}
+		.nav div{
+			float: left;
+			width: 150px;
+			height: 100px;
+			border: 1px solid hotpink;
+			box-shadow: 0 0 10px hotpink;
+			margin-left: 20px;
+			background-color: hotpink;
+			text-align: center;
+			line-height: 100px;
+		}
+	</style>
+	<body>
+		<div class="nav">
+			<div class="div1">
+				第一选项
+			</div>
+			<div class="div2">
+				第二选项
+			</div>
+			<div class="div3">
+				第三选项
+			</div>
+			<div class="div4">
+				第四选项
+			</div>
+			
+		</div>
+		<div class="test1">
+			<ul class="ul1">
+				<li class="li1"></li>
+				<li class="li2"></li>
+				<li class="li3"></li>
+				<li class="li4"></li>
+				<li class="li5"></li>
+			</ul>
+		</div>
+		<div class="test2"></div>
+		<div class="test3"></div>
+		<div class="test4"></div>
+		<span id="left"></span>
+		<span id="right"></span>
+	</body>
+	<script type="text/javascript">
+		var n = 0;
+		var leftbtn	= $("#left");
+		var rightbtn = $("#right");
+		var lis = $(".ul1 li");
+			leftbtn.click(function(){
+				for (var i=0; i < lis.length;i++) {
+					var minleft=lis.eq(i).position().left;
+					if (minleft == 600) {
+						lis.eq(i).css({
+							"left": 800+"px",
+							"opacity":"0.3",
+							"z-index":"1"
+						});
+						n = 4;
+					}else if (minleft == 800) {
+							lis.eq(i).css({
+								"opacity":"0.5",
+								"z-index":"2",
+								"left": minleft - 50 +"px"
+							});
+						}else if (minleft == 750) {
+							lis.eq(i).css({
+								"z-index":"3",
+								"opacity":"1",
+								"left": minleft - 50 +"px"
+							});
+						}else if (minleft == 700) {
+							lis.eq(i).css({
+								"z-index":"2",
+								"opacity":"0.5",
+								"left": minleft - 50 +"px"
+							});	
+						}else if (minleft == 650) {
+							lis.eq(i).css({
+								"z-index":"1",
+								"opacity":"0.3",
+								"left": minleft - 50 +"px"
+							});	
+						}
+					}		
+			});
+	</script>
+</html>

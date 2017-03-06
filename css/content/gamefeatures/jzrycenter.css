@@ -1,0 +1,297 @@
+.jzrycenter{
+	display: none;
+	width: 100%;
+	height: 910px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: url(../../../img/gamefeatures/Unknown-7.jpeg);
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+#jzrycenter_on{
+	opacity: 1;
+	-webkit-animation: chu 0.5s 0s ease 1;
+	animation: chu 0.5s 0s ease 1;
+}
+#jzrycenter_off{
+	opacity: 0;
+	-webkit-animation: chu2 0.5s 0s ease 1;
+	animation: chu2 0.5s 0s ease 1;
+}
+@keyframes chu{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes chu{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes chu2{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@-webkit-keyframes chu2{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.jzry{
+	width: 1000px;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -455px;
+}
+#jzry_a1{
+	position: absolute;
+    top: 339px;
+    left: 130px;
+    width: 270px;
+    height: 90px;
+}
+#jzry_a2{
+	position: absolute;
+    top: 395px;
+    left: 488px;
+    width: 208px;
+    height: 88px;
+}
+#jzry_a3{
+	position: absolute;
+    top: 267px;
+    left: 527px;
+    width: 133px;
+    height: 40px;
+}
+#jzry_a4{
+	position: absolute;
+    top: 355px;
+    left: 896px;
+    width: 160px;
+    height: 40px;
+}
+#jzry_a5{
+	position: absolute;
+    top: 525px;
+    left: 925px;
+    width: 160px;
+    height: 40px;
+}
+#jzry_a6{
+	position: absolute;
+    top: 501px;
+    left: 540px;
+    width: 206px;
+    height: 90px;
+}
+#jzry_a7{
+	position: absolute;
+    top: 438px;
+    left: 896px;
+    width: 160px;
+    height: 40px;
+}
+#jzry_a8{
+	position: absolute;
+    top: 603px;
+    left: 426px;
+    width: 204px;
+    height: 88px;
+}
+#jzry_a9{
+	position: absolute;
+    top: 332px;
+    left: 594px;
+    width: 130px;
+    height: 36px;
+}
+
+#jzryleft{
+	display: block;
+	width: 86px;
+	height: 162px;
+	position: absolute;
+	top: 425px;
+	left: 50px;
+	z-index: 10;
+}
+#jzryleft img{
+	width: 100%;
+}
+#jzryright{
+	display: block;
+	width: 86px;
+	height: 162px;
+	position: absolute;
+	top: 425px;
+	right: 50px;
+	z-index: 10;
+}
+#jzryright img{
+	width: 100%;
+}
+.jzryswiter{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 20;
+}
+#jzryswiter_on{
+	opacity: 1;
+	animation: jzryswiter_on 0.5s 0s ease 1;
+	-webkit-animation: jzryswiter_on 0.5s 0s ease 1;
+}
+#jzryswiter_off{
+	opacity: 0;
+	animation: jzryswiter_off 0.5s 0s ease 1;
+	-webkit-animation: jzryswiter_off 0.5s 0s ease 1;
+}
+@-webkit-keyframes jzryswiter_on{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes jzryswiter_on{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@-webkit-keyframes jzryswiter_off{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@keyframes jzryswiter_off{
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+.jzryswiter ul{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.jzryswiter ul li{
+	width: 100%;
+	height: 100%;
+	display: none;
+	text-align: center;
+}
+.lis_on{
+	opacity: 1;
+	animation: yumen 0.5s 0s ease 1;
+	-webkit-animation: yumen 0.5s 0s ease 1;
+}
+@-webkit-keyframes yumen{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes yumen{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.swiper-container{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+#jzryswiterleft{
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -520px;
+	top: 426px;
+	width: 54px;
+	height: 100px;
+	background: url(../../../img/gamefeatures/switerleft.png);
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+#jzryswiterright{
+	display: block;
+	position: absolute;
+	right: 50%;
+	margin-right: -520px;
+	top: 426px;
+	width: 54px;
+	height: 100px;
+	background: url(../../../img/gamefeatures/switerright.png);
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+#jzryswiteroff{
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 230px;
+	left: 50%;
+	margin-left: 470px;
+	background: url(../../../img/gamefeatures/switeroff.png);
+	background-repeat: no-repeat;
+	z-index: 10;
+}
+.jzryswiter_bottom{
+	width: 240px;
+	height: 30px;
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -120px;
+	text-align: center;
+}
+.jzryswiter_bottom a{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-left: 5px;
+}

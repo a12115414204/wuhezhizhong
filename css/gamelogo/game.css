@@ -1,0 +1,226 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.game{
+	width: 100%;
+	height: 100%;
+	background: url(../../img/Homepage/content/Unknown.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+.gameicon{
+	margin: 0 auto;
+	width: 470px;
+	height: 60px;
+	transform: translateY(50px);
+	animation: downs 1s 0s ease-out 1;
+	-webkit-animation: downs 1s 0s ease-out 1;
+}
+#gameicons{
+	width: 100%;
+}
+@-webkit-keyframes downs{
+	0%{
+		transform: translateY(0px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(50px);
+		opacity: 1;
+	}
+}
+@keyframes downs{
+	0%{
+		transform: translateY(0px);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(50px);
+		opacity: 1;
+	}
+}
+.gameiconlove{
+	width: 580px;
+	height: 125px;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
+	margin:auto;
+	opacity: 0;
+}
+#gameloves{
+	width: 100%;
+}
+#gamelovedong{
+	opacity: 1;
+	animation: downslove 1s 0s ease-out 1;
+	-webkit-animation: downslove 1s 0s ease-out 1;
+}
+@-webkit-keyframes downslove{
+	0%{
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+@keyframes downslove{
+	0%{
+		transform: translateY(-100%);
+		opacity: 0;
+	}
+	100%{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+.gameft{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background-color: black;
+}
+.gamefooter{
+	width: 1000px;
+	margin: 0 auto;
+}
+#gamefooters{
+	width: 100%;
+	height: 100px;
+}
+.gamtftright{
+	position: absolute;
+	width: 650px;
+	height: 100px;
+	top: 0;
+	right: 0;
+}
+.gamtftright p{
+	position: relative;
+	margin-top: 20px;
+	color:darkslategray;
+	width: 100%;
+	height: 20px;
+	font-size: 0.8em;
+}
+.gamtftright p span:nth-of-type(1){
+	display: inline-block;
+	margin-left: 5px;
+	width: 30%;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 25px;
+}
+.gamtftright p img{
+	width: 20px;
+	height: 20px;
+}
+.gamtftright p img:nth-of-type(2){
+	position: absolute;
+	top: 0;
+	left: 35%;
+}
+.gamtftright p span:nth-of-type(2){
+	display: inline-block;
+	margin-left: 5px;
+	width: 45%;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 38%;
+}
+.gamtftright p:nth-of-type(2){
+	margin-top: 5px;
+	color: grey;
+}
+.gamtftright p:nth-of-type(3){
+	margin-top: 5px;
+	color: grey;
+}
+.gamebtn{
+	position: absolute;
+	top: 65%;
+	left: 0;
+	right: 0;
+	margin:auto;
+	width: 150px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 0.8em;
+	border:1px solid red;
+	overflow: hidden;
+	opacity: 0;
+}
+.gamebtn p{
+	width: 100%;
+	height: 100%;
+	color: white;
+	background-color: red;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+}
+.gamebtn a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	left: 0;
+	color:red;
+	text-decoration: none;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s; 
+}
+.gamebtn:hover p{
+	opacity: 0;
+	background-color: rgba(0,0,0,0);
+	-webkit-transition: all 0.5s; 
+}
+.gamebtn:hover a{
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease;
+}
+#gamebtns{
+	opacity: 1;
+	animation: btns 1s 0s ease-out 1;
+	-webkit-animation: btns 1s 0s ease-out 1;
+}
+@-webkit-keyframes btns{
+	0%{
+		top: 55%;
+		opacity: 0;
+	}
+	100%{
+		top: 65%;
+		opacity: 1;
+	}
+}
+@keyframes btns{
+	0%{
+		top: 55%;
+		opacity: 0;
+	}
+	100%{
+		top: 65%;
+		opacity: 1;
+	}
+}
+.gamebottom{
+	width: 300px;
+	height: 90px;
+	position: absolute;
+	bottom: 105px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}

@@ -1,0 +1,91 @@
+.gameright{
+	position: absolute;
+	top: 40%;
+	right: 0px;
+	width: 100px;
+	height: 80px;
+	z-index: 2;
+	opacity: 0;
+}
+#gamerbtn{
+	opacity: 1;
+	animation: gamerbtns 0.5s 0s ease 1;
+	-webkit-animation: gamerbtns 0.5s 0s ease 1;
+}
+@-webkit-keyframes gamerbtns{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes gamerbtns{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.gameright a{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: block;
+	width: 100px;
+	height: 80px;
+	color: white;
+	line-height: 80px;
+	text-align: center;
+	text-decoration: none;
+	z-index: 1;
+}
+.gameright a span{
+	font-size: 3.5em;
+	transition: all 0.5s 0.5s ease;
+	-webkit-transition: all 0.5s 0.5s ease;
+}
+.gameright:hover span{
+	font-size: 2.5em;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+.gameright p{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 0px;
+	height: 80px;
+	background-color: #000000;
+	transition: all 0.5s 0.5s ease;
+}
+.gameright:hover p{
+	position: absolute;
+	width:100px;
+	transition: all 0.5s 0s ease;
+}
+.gameright b{
+	position: absolute;
+	top: 0px;
+	right: 100px;
+	width: 100px;
+	height: 80px;
+	background-color: red;
+	transform-origin: right;
+	transform: rotateY(-90deg);
+	transition: all 0.5s 0s ease;
+}
+.gameright:hover b{
+	transform-style: preserve-3d;
+	transform: rotateY(0deg);
+	transition: all 0.5s 0.5s ease;
+}
+.gameright b a{
+	display: block;
+	width: 100px;
+	height: 80px;
+	font-size: 0.8em;
+	color: antiquewhite;
+	text-decoration: none;
+}
